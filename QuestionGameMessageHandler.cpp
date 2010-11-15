@@ -6,6 +6,8 @@ Filename:    QuestionGameMessageHandler.cpp
 
 #include "QuestionGameMessageHandler.h"
 
+#include <string>
+#include <iostream>
 
 //-------------------------------------------------------------------------------------
 QuestionGameMessageHandler::QuestionGameMessageHandler()
@@ -17,9 +19,10 @@ QuestionGameMessageHandler::~QuestionGameMessageHandler(void)
 }
 
 /*this should call a function on the client or the server */
-QuestionGameMessageHandler::translateMessage(char* message)
+void QuestionGameMessageHandler::translateMessage(std::string message)
 {
-	if (message[0] == "u")
+        std::string u = "u";
+	if (message.compare(0,1,u))
 	{
 		std::cout << "call username function" << std::endl;
 	}
@@ -27,4 +30,5 @@ QuestionGameMessageHandler::translateMessage(char* message)
 	{
 		std::cout << "call something" << std::endl;
 	}
+
 }

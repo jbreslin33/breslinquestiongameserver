@@ -9,6 +9,9 @@ Filename:    QuestionGame.h
 #include <stdlib.h>
 #include <string.h>
 
+
+class GameServer;
+
 class QuestionGame
 {
 
@@ -17,8 +20,10 @@ public:
     virtual ~QuestionGame(void);
 
 
-protected:
+	void setGameServer(GameServer* gameServer);
 
+protected:
+GameServer* gameServer;
 
 };
 

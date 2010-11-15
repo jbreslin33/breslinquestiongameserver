@@ -1,4 +1,4 @@
-#/*
+#*
 #-----------------------------------------------------------------------------
 #Filename:    CMakeLists.txt
 #-----------------------------------------------------------------------------
@@ -31,12 +31,14 @@ set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/dist")
 
 set(HDRS
 	QuestionGame.h
-	MessageHandler.h
+	../breslinmessagehandler/MessageHandler.h
+	QuestionGameMessageHandler.h
 )
 
 set(SRCS
 	QuestionGame.cpp
-	MessageHandler.cpp
+	QuestionGameMessageHandler.cpp
+	../breslinmessagehandler/MessageHandler.cpp
 	Main.cpp
 )
 

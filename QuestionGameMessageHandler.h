@@ -1,28 +1,27 @@
 
 /*
 -----------------------------------------------------------------------------
-Filename:    MessageHandler.h
+Filename:    QuestionGameMessageHandler.h
 */
-#ifndef __MessageHandler_h_
-#define __MessageHandler_h_
+#ifndef __QuestionGameMessageHandler_h_
+#define __QuestionGameMessageHandler_h_
 
+#include "../breslinmessagehandler/MessageHandler.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <string>
 
-class MessageHandler
+class QuestionGameMessageHandler : public MessageHandler
 {
 
 public:
-    MessageHandler();
-    virtual ~MessageHandler(void);
+    QuestionGameMessageHandler();
+    virtual ~QuestionGameMessageHandler(void);
 
+virtual void translateMessage(std::string message);
 
-	translateMessage(char* message);
 protected:
 char* mMessage;
-
-
 
 };
 
