@@ -31,14 +31,22 @@ set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/dist")
 
 set(HDRS
 	QuestionGame.h
+	../breslingame/Game.h
+	../breslingameserver/GameServer.h
+	QuestionGameServer.h
 	../breslinmessagehandler/MessageHandler.h
 	QuestionGameMessageHandler.h
+	../breslinclient/Client.h
 )
 
 set(SRCS
 	QuestionGame.cpp
+	../breslingame/Game.cpp
+	../breslingameserver/GameServer.cpp
+	QuestionGameServer.cpp
 	QuestionGameMessageHandler.cpp
 	../breslinmessagehandler/MessageHandler.cpp
+	../breslinclient/Client.cpp
 	Main.cpp
 )
 

@@ -1,23 +1,23 @@
 /*
 -----------------------------------------------------------------------------
-Filename:    QuestionGame.h
+Filename:    QuestionGameServer.h
 */
-#ifndef __QuestionGame_h_
-#define __QuestionGame_h_
+#ifndef __QuestionGameServer_h_
+#define __QuestionGameServer_h_
 
-#include "../breslingame/Game.h"
+#include "../breslingameserver/GameServer.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 
-class QuestionGame : public Game
+class QuestionGameServer : public GameServer
 {
 
 public:
-    QuestionGame();
-    virtual ~QuestionGame(void);
+    QuestionGameServer();
+    virtual ~QuestionGameServer(void);
 
 
 protected:
