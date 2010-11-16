@@ -11,6 +11,7 @@ Filename:    QuestionGameServer.cpp
 QuestionGameServer::QuestionGameServer()
 {
 	std::cout << "Creating QuestionGameServer\n";
+	QuestionGameMessageHandler* questionGameMessageHandler = new QuestionGameMessageHandler();
 	
 
 
