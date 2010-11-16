@@ -11,6 +11,9 @@ Filename:    QuestionGameServer.cpp
 QuestionGameServer::QuestionGameServer()
 {
 	std::cout << "Creating QuestionGameServer\n";
+	
+
+
 }
 //-------------------------------------------------------------------------------------
 QuestionGameServer::~QuestionGameServer(void)
