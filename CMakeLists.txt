@@ -37,6 +37,7 @@ set(HDRS
 	../breslinmessagehandler/MessageHandler.h
 	QuestionGameMessageHandler.h
 	../breslinclient/Client.h
+	../breslinlistenserver/ListenServer.h
 )
 
 set(SRCS
@@ -47,6 +48,7 @@ set(SRCS
 	QuestionGameMessageHandler.cpp
 	../breslinmessagehandler/MessageHandler.cpp
 	../breslinclient/Client.cpp
+	../breslinlistenserver/ListenServer.cpp
 	Main.cpp
 )
 
