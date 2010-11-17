@@ -12,6 +12,9 @@ Filename:    QuestionGameMessageHandler.cpp
 //-------------------------------------------------------------------------------------
 QuestionGameMessageHandler::QuestionGameMessageHandler()
 {
+
+	std::cout << "Creating QuestionGameMessageHandler\n";
+
 }
 //-------------------------------------------------------------------------------------
 QuestionGameMessageHandler::~QuestionGameMessageHandler(void)

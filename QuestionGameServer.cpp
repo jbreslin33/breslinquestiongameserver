@@ -4,6 +4,7 @@ Filename:    QuestionGameServer.cpp
 */
 
 #include "QuestionGameServer.h"
+#include "QuestionGameMessageHandler.h"
 
 #include <iostream>
 

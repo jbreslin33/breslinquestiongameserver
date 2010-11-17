@@ -11,8 +11,12 @@ Filename:    QuestionGame.cpp
 //-------------------------------------------------------------------------------------
 QuestionGame::QuestionGame()
 {
-	std::cout << "Starting Question Game\n";
+	std::cout << "QuestionGame Constructor\n";
+
+	std::cout << "Creating Instance of QuestionGameServer\n";
 	QuestionGameServer* gs = new QuestionGameServer();
+
+	std::cout << "call setGameServer(gs) on Base Class Game Server and pass in QuestionGameServer\n";
 	setGameServer(gs);
 	
 }
