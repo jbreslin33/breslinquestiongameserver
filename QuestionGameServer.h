@@ -20,6 +20,7 @@ public:
     virtual ~QuestionGameServer(void);
 
 
+	void serverLoop();
 protected:
 
 };

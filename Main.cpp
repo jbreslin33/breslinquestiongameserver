@@ -1,9 +1,9 @@
-#include "QuestionGame.h"
+#include "QuestionGameServer.h"
 #include <iostream>
 
 int main()
 {
-	std::cout << "Creating new Instance of QuestionGame In Main.cpp\n";
-	QuestionGame* questionGame =  new QuestionGame();
+	std::cout << "Creating new Instance of QuestionGameServer In Main.cpp\n";
+	QuestionGameServer* questionGameServer =  new QuestionGameServer();
 }
 

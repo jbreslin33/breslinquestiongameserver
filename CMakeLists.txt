@@ -16,7 +16,7 @@
 #*/
 cmake_minimum_required(VERSION 2.6)
 
-project(QuestionGame)
+project(QuestionGameServer)
 
 
 if (CMAKE_BUILD_TYPE STREQUAL "")
@@ -30,10 +30,10 @@ set(CMAKE_DEBUG_POSTFIX "_d")
 set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/dist")
 
 set(HDRS
-	QuestionGame.h
+	QuestionGameServer.h
 	../breslingame/Game.h
 	../breslingameserver/GameServer.h
-	QuestionGameServer.h
+	QuestionGame.h
 	../breslinmessagehandler/MessageHandler.h
 	QuestionGameMessageHandler.h
 	../breslinclient/Client.h
@@ -41,10 +41,10 @@ set(HDRS
 )
 
 set(SRCS
-	QuestionGame.cpp
+	QuestionGameServer.cpp
 	../breslingame/Game.cpp
 	../breslingameserver/GameServer.cpp
-	QuestionGameServer.cpp
+	QuestionGame.cpp
 	QuestionGameMessageHandler.cpp
 	../breslinmessagehandler/MessageHandler.cpp
 	../breslinclient/Client.cpp
@@ -54,6 +54,6 @@ set(SRCS
 
 
 
-add_executable(QuestionGame WIN32 ${HDRS} ${SRCS})
+add_executable(QuestionGameServer WIN32 ${HDRS} ${SRCS})
 
 
