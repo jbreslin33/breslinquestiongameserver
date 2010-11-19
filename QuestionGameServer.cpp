@@ -13,6 +13,8 @@ QuestionGameServer::QuestionGameServer()
 {
 	std::cout << "Creating QuestionGameServer\n";
 	QuestionGameMessageHandler* questionGameMessageHandler = new QuestionGameMessageHandler();
+	std::cout << "setMassageHandler(questionGameMessageHandler) in QuestionGameServer Constructor\n";
+	setMessageHandler(questionGameMessageHandler);	
 	
 
 

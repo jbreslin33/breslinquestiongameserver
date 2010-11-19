@@ -19,7 +19,7 @@ public:
     QuestionGame();
     virtual ~QuestionGame(void);
 
-
+	void gameLoop();
 protected:
 
 };

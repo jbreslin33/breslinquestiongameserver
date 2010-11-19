@@ -5,6 +5,7 @@ Filename:    QuestionGameMessageHandler.cpp
 */
 
 #include "QuestionGameMessageHandler.h"
+#include "../breslinlistenserver/ListenServer.h"
 
 #include <string>
 #include <iostream>
@@ -13,7 +14,9 @@ Filename:    QuestionGameMessageHandler.cpp
 QuestionGameMessageHandler::QuestionGameMessageHandler()
 {
 
-	std::cout << "Creating QuestionGameMessageHandler\n";
+	std::cout << "QuestionGameMessageHandler Constructor\n";
+
+	mListenServer->setMessageHandler(this);
 
 }
 //-------------------------------------------------------------------------------------
