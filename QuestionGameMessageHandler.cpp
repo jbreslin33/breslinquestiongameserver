@@ -16,7 +16,7 @@ QuestionGameMessageHandler::QuestionGameMessageHandler()
 
 	std::cout << "QuestionGameMessageHandler Constructor\n";
 
-	mListenServer->setMessageHandler(this);
+	//mListenServer->setMessageHandler(this);
 
 }
 //-------------------------------------------------------------------------------------

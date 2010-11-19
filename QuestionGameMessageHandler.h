@@ -21,7 +21,6 @@ public:
 virtual void translateMessage(std::string message);
 
 protected:
-char* mMessage;
 
 };
 
