@@ -27,6 +27,7 @@ QuestionGameMessageHandler::~QuestionGameMessageHandler(void)
 /*this should call a function on the client or the server */
 void QuestionGameMessageHandler::translateMessage(std::string message)
 {
+	std::cout << "in translateMessage!!!\n";
         std::string u = "u";
 	if (message.compare(0,1,u))
 	{
