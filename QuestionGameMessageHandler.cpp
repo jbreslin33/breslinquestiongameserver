@@ -29,7 +29,7 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 {
 	std::cout << "in translateMessage!!!\n";
         std::string u = "u";
-	if (message.compare(0,1,u))
+	if (message.compare(0,1,u) == 0)
 	{
 		std::cout << "call username function" << std::endl;
 	}
