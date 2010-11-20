@@ -28,9 +28,9 @@ QuestionGameMessageHandler::~QuestionGameMessageHandler(void)
 /*this should call a function on the client or the server */
 void QuestionGameMessageHandler::translateMessage(std::string message)
 {
-	std::cout << "in translateMessage!!!\n";
+//	std::cout << "in translateMessage!!!\n";
         std::string u = "username";
-	std::string delimiter = "^";
+	std::string delimiter = ",";
 
 	std::string currentParameter = "";
 
@@ -39,34 +39,16 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 	std::vector<std::string> functionVector;
 
 	int i;
-	for (i=0;i < message.length(); i++)
+	for (i=1;i < message.length(); i++)
 	{
-		if (message.compare(i,1,delimiter) == 0)
+		std::cout << "evaluate char:\n";
+		if (message.compare(i,1,delimiter) == 0) //check for delimiter
 		{
 			std::cout << "delimiter reached\n";
-			
-	
-			currentParameter = message.substr(lastDelimiterSpot,i-lastDelimiterSpot);
-			std::cout << currentParameter;
-			lastDelimiterSpot = i;
-			//functionVector			
-						
-			
-			
-			
-
-
-
+		}
+		else
+		{
+			std::cout << "regular char\n";
 		}
 	}
-/*	
-	if (message.compare(0,1,u) == 0)
-	{
-		std::cout << "call username function" << std::endl;
-	}
-	else
-	{
-		std::cout << "call something" << std::endl;
-	}
-*/
 }
