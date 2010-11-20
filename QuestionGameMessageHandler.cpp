@@ -6,6 +6,7 @@ Filename:    QuestionGameMessageHandler.cpp
 
 #include "QuestionGameMessageHandler.h"
 #include "../breslinlistenserver/ListenServer.h"
+#include "../breslingameserver/GameServer.h"
 
 #include <string>
 #include <iostream>
@@ -53,6 +54,7 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 	if (functionVector.at(0).compare("joingame") == 0)
 	{
 		std::cout << "You need to call joingame function here!\n";
+		getGameServer()->joinGame(functionVector.at(i));		
 	}
 	functionVector.clear();
 }
