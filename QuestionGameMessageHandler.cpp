@@ -49,6 +49,10 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
   	}
 
   	delete[] cstr;  
-	functionVector.clear();
 
+	if (functionVector.at(0).compare("joingame") == 0)
+	{
+		std::cout << "You need to call joingame function here!\n";
+	}
+	functionVector.clear();
 }
