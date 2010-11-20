@@ -28,7 +28,22 @@ QuestionGameMessageHandler::~QuestionGameMessageHandler(void)
 void QuestionGameMessageHandler::translateMessage(std::string message)
 {
 	std::cout << "in translateMessage!!!\n";
-        std::string u = "u";
+        std::string u = "username";
+	std::string delimiter = "^";
+
+	int i;
+	for (i=0;i < message.length(); i++)
+	{
+		if (message.compare(i,1,delimiter) == 0)
+		{
+			std::cout << "delimiter reached\n";			
+
+
+
+
+		}
+	}
+/*	
 	if (message.compare(0,1,u) == 0)
 	{
 		std::cout << "call username function" << std::endl;
@@ -37,5 +52,5 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 	{
 		std::cout << "call something" << std::endl;
 	}
-
+*/
 }
