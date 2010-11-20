@@ -10,6 +10,7 @@ Filename:    QuestionGameMessageHandler.h
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <vector>
 
 class QuestionGameMessageHandler : public MessageHandler
 {
@@ -22,6 +23,7 @@ virtual void translateMessage(std::string message);
 
 protected:
 
+	std::vector<std::string> functionVector;
 };
 
 #endif

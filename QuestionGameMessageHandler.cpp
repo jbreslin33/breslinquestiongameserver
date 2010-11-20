@@ -29,7 +29,6 @@ QuestionGameMessageHandler::~QuestionGameMessageHandler(void)
 void QuestionGameMessageHandler::translateMessage(std::string message)
 {
         std::string u = "username";
-	std::vector<std::string> functionVector;
 
 
 	char * cstr, *p;
@@ -45,9 +44,11 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
   	while (p!=NULL)
   	{
     		std::cout << p << std::endl;
+		functionVector.push_back(p);
     		p=strtok(NULL,",");
   	}
 
   	delete[] cstr;  
+	functionVector.clear();
 
 }
