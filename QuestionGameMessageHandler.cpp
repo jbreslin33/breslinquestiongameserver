@@ -39,7 +39,7 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 	std::vector<std::string> functionVector;
 
 	int i;
-	for (i=1;i < message.length(); i++)
+	for (i=0;i < message.length(); i++)
 	{
 		std::cout << "evaluate char:\n";
 		if (message.compare(i,1,delimiter) == 0) //check for delimiter
