@@ -28,27 +28,26 @@ QuestionGameMessageHandler::~QuestionGameMessageHandler(void)
 /*this should call a function on the client or the server */
 void QuestionGameMessageHandler::translateMessage(std::string message)
 {
-//	std::cout << "in translateMessage!!!\n";
         std::string u = "username";
-	std::string delimiter = ",";
-
-	std::string currentParameter = "";
-
-	int lastDelimiterSpot = 0;
-
 	std::vector<std::string> functionVector;
 
-	int i;
-	for (i=0;i < message.length(); i++)
-	{
-		std::cout << "evaluate char:\n";
-		if (message.compare(i,1,delimiter) == 0) //check for delimiter
-		{
-			std::cout << "delimiter reached\n";
-		}
-		else
-		{
-			std::cout << "regular char\n";
-		}
-	}
+
+	char * cstr, *p;
+
+  	//std::string str ("Please,split,this,phrase,into,tokens");
+
+  	cstr = new char [message.size()+1];
+  	strcpy (cstr, message.c_str());
+
+  	// cstr now contains a c-string copy of str
+
+  	p=strtok (cstr,",");
+  	while (p!=NULL)
+  	{
+    		std::cout << p << std::endl;
+    		p=strtok(NULL,",");
+  	}
+
+  	delete[] cstr;  
+
 }
