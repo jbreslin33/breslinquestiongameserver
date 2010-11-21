@@ -54,7 +54,7 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 	if (functionVector.at(0).compare("joingame") == 0)
 	{
 		std::cout << "You need to call joingame function here!\n";
-		getGameServer()->joinGame(functionVector.at(i));		
+		getGameServer()->joinGame(functionVector.at(1));		
 	}
 	functionVector.clear();
 }
