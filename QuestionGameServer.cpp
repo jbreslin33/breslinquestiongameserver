@@ -30,6 +30,11 @@ QuestionGameServer::QuestionGameServer()
 	std::cout << "mListenServer->setMessageHandler(mMessageHandler)\n";
 	mListenServer->setMessageHandler(mMessageHandler);
 
+
+	std::cout << "mMessageHandler->setGameServer(this)\n";
+	mMessageHandler->setGameServer(this);
+
+
 	std::cout << "creating QuestionGame\n";
 	mGame = new QuestionGame();
 
