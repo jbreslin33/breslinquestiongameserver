@@ -51,10 +51,24 @@ void QuestionGameMessageHandler::translateMessage(std::string message)
 
   	delete[] cstr;  
 
+/**************check what function***************************/
+
+	//client to server
 	if (functionVector.at(0).compare("joingame") == 0)
-	{
-		std::cout << "You need to call joingame function here!\n";
-		getGameServer()->joinGame(functionVector.at(1));		
+	{	//joinGame("Name","IP of client","port");
+		getGameServer()->joinGame(functionVector.at(1),functionVector.at(2),functionVector.at(3));		
 	}
+
+	
+
+	//server to client
+	if (functionVector.at(0).compare("nameTaken") == 0)
+	{
+		//getGameServer()->joinGame(functionVector.at(1),functionVector.at(2),functionVector(3));		
+	}
+
 	functionVector.clear();
+
+
+/************************end check what function***********/
 }
